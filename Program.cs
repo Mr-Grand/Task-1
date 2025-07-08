@@ -4,9 +4,9 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Player player1 = new Player("Danik", 24, "Archer");
-        var player2 = new Player("Khel", 40, "Warrior");
-        var player3 = new Player();
+        Player player1 = new("Danik", 24, "Archer");
+        Player player2 = new("Khel", 40, "Warrior");
+        Player player3 = new();
 
         player1.ShowInfo();
         player2.ShowInfo();
