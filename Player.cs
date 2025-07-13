@@ -8,6 +8,7 @@ public enum PlayerClass
     Archer,
     NPC
 }
+
 public class Player
 {
     public PlayerClass ClassName;
