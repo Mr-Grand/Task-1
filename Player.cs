@@ -11,8 +11,8 @@ public enum PlayerClass
 public class Player
 {
     public PlayerClass ClassName;
-    public int Level{ get; private set; }
-    public string Name{ get; private set; }
+    public int Level { get; private set; }
+    public string Name { get; private set; }
 
     public Player(string name, int level, PlayerClass className)
     {
