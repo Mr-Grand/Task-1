@@ -1,36 +1,28 @@
 ﻿namespace Task_1;
 
-public enum PlayerClass
+public enum CharacterClass
 {
     Warrior,
     Mage,
     Rogue,
-    Archer,
-    NPC
+    Archer
 }
 
 public class Player
 {
-    public PlayerClass ClassName;
+    public CharacterClass ClassType;
     public int Level { get; private set; }
     public string Name { get; private set; }
 
-    public Player(string name, int level, PlayerClass className)
+    public Player(string name, int level, CharacterClass classType)
     {
         Name = name;
         Level = level;
-        ClassName = className;
-    }
-
-    public Player()
-    {
-        Name = "Unknown";
-        Level = 0;
-        ClassName = PlayerClass.NPC;
+        ClassType = classType;
     }
 
     public void ShowInfo()
     {
-        Console.WriteLine($"\nPlayer - {Name}\nLevel - {Level}\nClass - {ClassName}\n");
+        Console.WriteLine($"\nPlayer - {Name}\nLevel - {Level}\nClass - {ClassType}\n");
     }
 }
