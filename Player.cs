@@ -10,7 +10,7 @@ public enum CharacterClass
 
 public class Player
 {
-    public CharacterClass ClassType;
+    public CharacterClass ClassType { get; private set; }
     public int Level { get; private set; }
     public string Name { get; private set; }
 
